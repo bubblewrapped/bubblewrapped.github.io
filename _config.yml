@@ -1,0 +1,5 @@
+name: Lingo Dingo
+markdown: redcarpet
+pygments: true
+exclude: [scss]
+category-list: [portfolio,blog]

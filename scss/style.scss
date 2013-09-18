@@ -1,0 +1,100 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+@import "normalize";
+
+html,
+body {
+	height:100%;
+}
+
+img {
+	max-width:100%;
+}
+
+a {
+	color:#2e85c8;
+	text-decoration:none;
+	&:hover,&:focus {
+		text-decoration:underline;
+	}
+}
+
+.header {
+	width:50%;
+	float:left;
+	h2 {
+		float:right;
+		clear:right;
+		padding-right:20px;
+	}
+}
+
+.title {
+	float:right;
+	text-align:right;
+	padding-right:20px;
+	a {
+		color:#333;
+		text-decoration:none;
+	}
+}
+
+.menu {
+	ul {
+		list-style:none;
+		margin:0;
+		padding: 0;
+		overflow:hidden;
+	}
+	li {
+		float:left;
+		a {
+			color:#333;
+			text-decoration:none;
+			padding-right:20px;
+			&:hover {
+				color:#2e85c8;
+			}
+		}
+	}
+}
+
+.content {
+	width:50%;
+	float:right;
+	margin-top:2.3em;
+	padding-left:20px;
+}
+
+.postHeader {
+	margin-top:50px;
+	h2,
+	h1 {
+		margin-bottom:0;
+		a {
+			color:#333;
+			text-decoration:none;
+		}
+	}
+}
+
+.postImage {
+	display:block;
+	float:right;
+	padding:5px;
+	background:#404040;
+}
+
+.meta {
+	text-transform:uppercase;
+	color:#bbb;
+}
+
+.post {
+	width:70%;
+}
+
+.footer {
+	padding-top:50px;
+	text-align:center;
+	clear:both;
+}
