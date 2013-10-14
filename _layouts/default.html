@@ -13,37 +13,45 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <h2>{{ page.title }}</h2>
-              {% if page.thumbnail %}
-                    <img src="{{ page.thumbnail }}" class="postImage" />
-                {% endif %}
+      <div class="header group">
+        <div class="half">
+          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+        </div>
+        <div class="menu half">
+          <ul>
+            <li><a class="extra" href="/blog">Blog</a></li>
+            <li><a class="extra" href="/portfolio">Portfolio</a></li>
+            <li><a class="extra" href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content group">
+        <div class="half">
+          <h2 class="pageTitle">{{ page.title }}</h2>
+          {% if page.thumbnail %}
+            <div class="postImage">
+              <img src="{{ page.thumbnail }}"/>
             </div>
-            <div class="content">
-              <div class="menu">
-                <ul>
-                  <li><a class="extra" href="/blog">Blog</a></li>
-                  <li><a class="extra" href="/portfolio">Portfolio</a></li>
-                  <li><a class="extra" href="/contact/">Contact</a></li>
-                </ul>
-              </div>
-                {{ content }}
-          </div>
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Daniel Langenakker<br />
-                Front End Web Developer<br />
-                dlangenakker@gmail.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="http://github.com/bubblewrapped/">github.com/bubblewrapped</a><br />
-                <a href="http://twitter.com/dlangenakker/">twitter.com/dlangenakker</a><br />
-              </p>
-            </div>
-          </div>
+          {% endif %}
+        </div>
+        <div class="half">
+          {{ content }}
+        </div>
+      </div>
+      <div class="footer">
+        <div class="contact">
+          <p>
+            Daniel Langenakker<br />
+            Front End Web Developer<br />
+            dlangenakker@gmail.com
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="http://github.com/bubblewrapped/">github.com/bubblewrapped</a><br />
+            <a href="http://twitter.com/dlangenakker/">twitter.com/dlangenakker</a><br />
+          </p>
+        </div>
+      </div>
     </body>
 </html>

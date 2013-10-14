@@ -18,9 +18,16 @@ a {
 	}
 }
 
-.header {
+.half {
 	width:50%;
 	float:left;
+	@media screen and (max-width:600px) {
+		float:none;
+		width:auto;
+	}
+}
+
+.header {
 	h2 {
 		float:right;
 		clear:right;
@@ -36,12 +43,18 @@ a {
 		color:#333;
 		text-decoration:none;
 	}
+	@media screen and (max-width:600px) {
+		float:none;
+		text-align:left;
+		padding-left: 20px;
+	}
 }
 
 .menu {
+	margin-top:2.3em;
 	ul {
 		list-style:none;
-		margin:0;
+		margin:0 0 0 20px;
 		padding: 0;
 		overflow:hidden;
 	}
@@ -59,14 +72,10 @@ a {
 }
 
 .content {
-	width:50%;
-	float:right;
-	margin-top:2.3em;
-	padding-left:20px;
 }
 
 .postHeader {
-	margin-top:50px;
+	margin-top:50px 0 0 20px;
 	h2,
 	h1 {
 		margin-bottom:0;
@@ -77,11 +86,26 @@ a {
 	}
 }
 
+.pageTitle {
+	text-align:right;
+	padding:0 20px;
+	@media screen and (max-width:600px) {
+		text-align:left;
+	}
+}
+
 .postImage {
 	display:block;
 	float:right;
-	padding:5px;
-	background:#404040;
+	margin-right:20px;
+	img {
+		padding:5px;
+		background:#404040;
+	}
+	@media screen and (max-width:1100px) {
+		float:none;
+		margin-left:20px;
+	}
 }
 
 .meta {
@@ -90,7 +114,12 @@ a {
 }
 
 .post {
+	margin-left:20px;
 	width:70%;
+	@media screen and (max-width:900px) {
+		width:auto;
+		margin-right:20px;
+	}
 }
 
 .footer {

@@ -459,13 +459,18 @@ a {
   a:hover, a:focus {
     text-decoration: underline; }
 
-.header {
+.half {
   width: 50%;
   float: left; }
-  .header h2 {
-    float: right;
-    clear: right;
-    padding-right: 20px; }
+  @media screen and (max-width: 600px) {
+    .half {
+      float: none;
+      width: auto; } }
+
+.header h2 {
+  float: right;
+  clear: right;
+  padding-right: 20px; }
 
 .title {
   float: right;
@@ -474,29 +479,30 @@ a {
   .title a {
     color: #333;
     text-decoration: none; }
+  @media screen and (max-width: 600px) {
+    .title {
+      float: none;
+      text-align: left;
+      padding-left: 20px; } }
 
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-.menu li {
-  float: left; }
-  .menu li a {
-    color: #333;
-    text-decoration: none;
-    padding-right: 20px; }
-    .menu li a:hover {
-      color: #2e85c8; }
-
-.content {
-  width: 50%;
-  float: right;
-  margin-top: 2.3em;
-  padding-left: 20px; }
+.menu {
+  margin-top: 2.3em; }
+  .menu ul {
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+    overflow: hidden; }
+  .menu li {
+    float: left; }
+    .menu li a {
+      color: #333;
+      text-decoration: none;
+      padding-right: 20px; }
+      .menu li a:hover {
+        color: #2e85c8; }
 
 .postHeader {
-  margin-top: 50px; }
+  margin-top: 50px 0 0 20px; }
   .postHeader h2,
   .postHeader h1 {
     margin-bottom: 0; }
@@ -505,18 +511,36 @@ a {
       color: #333;
       text-decoration: none; }
 
+.pageTitle {
+  text-align: right;
+  padding: 0 20px; }
+  @media screen and (max-width: 600px) {
+    .pageTitle {
+      text-align: left; } }
+
 .postImage {
   display: block;
   float: right;
-  padding: 5px;
-  background: #404040; }
+  margin-right: 20px; }
+  .postImage img {
+    padding: 5px;
+    background: #404040; }
+  @media screen and (max-width: 1100px) {
+    .postImage {
+      float: none;
+      margin-left: 20px; } }
 
 .meta {
   text-transform: uppercase;
   color: #bbb; }
 
 .post {
+  margin-left: 20px;
   width: 70%; }
+  @media screen and (max-width: 900px) {
+    .post {
+      width: auto;
+      margin-right: 20px; } }
 
 .footer {
   padding-top: 50px;
