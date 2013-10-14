@@ -502,7 +502,7 @@ a {
         color: #2e85c8; }
 
 .postHeader {
-  margin-top: 50px 0 0 20px; }
+  margin-top: 2px; }
   .postHeader h2,
   .postHeader h1 {
     margin-bottom: 0; }
@@ -513,6 +513,7 @@ a {
 
 .pageTitle {
   text-align: right;
+  margin: 0;
   padding: 0 20px; }
   @media screen and (max-width: 600px) {
     .pageTitle {
