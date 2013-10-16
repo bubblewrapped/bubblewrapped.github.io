@@ -503,6 +503,9 @@ a {
 
 .content .half:first-child {
   min-height: 100px; }
+  @media screen and (max-width: 600px) {
+    .content .half:first-child {
+      min-height: auto; } }
 
 .postHeader {
   margin-top: 2px; }
