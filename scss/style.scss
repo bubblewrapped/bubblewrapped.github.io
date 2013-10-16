@@ -72,6 +72,9 @@ a {
 }
 
 .content {
+	.half:first-child {
+		min-height: 100px;
+	}
 }
 
 .postHeader {
