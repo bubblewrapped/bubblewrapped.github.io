@@ -501,6 +501,9 @@ a {
       .menu li a:hover {
         color: #2e85c8; }
 
+.content .half:first-child {
+  min-height: 100px; }
+
 .postHeader {
   margin-top: 2px; }
   .postHeader h2,
