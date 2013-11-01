@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic);
 /*! normalize.css v1.0.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -75,7 +75,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Lora', serif; }
 
 /*
  * Addresses margins handled incorrectly in IE 6/7.
@@ -445,3 +445,48 @@ table {
 .group {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
+
+body {
+  font-size: 24px;
+  color: #404040; }
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 1em; }
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5em; }
+
+.half {
+  width: 50%;
+  float: left; }
+
+.topBar {
+  background: #404040;
+  font-size: 16px; }
+  .topBar p {
+    margin: 0;
+    padding: 0.5em; }
+  .topBar a {
+    color: #fff;
+    text-decoration: none; }
+    .topBar a:hover, .topBar a:focus {
+      text-decoration: underline; }
+
+.title {
+  background: url("../img/header-image.jpg") no-repeat top center;
+  background-clip: cover;
+  color: #fff;
+  padding: 400px 0 5px;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+  .title h1 {
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1em; }
+  .title p {
+    font-style: italic;
+    font-size: 1.3em; }

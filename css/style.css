@@ -446,6 +446,12 @@ table {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
 
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html,
 body {
   height: 100%; }
@@ -461,7 +467,8 @@ a {
 
 .half {
   width: 50%;
-  float: left; }
+  float: left;
+  padding: 0 20px; }
   @media screen and (max-width: 600px) {
     .half {
       float: none;
@@ -469,27 +476,24 @@ a {
 
 .header h2 {
   float: right;
-  clear: right;
-  padding-right: 20px; }
+  clear: right; }
 
 .title {
   float: right;
-  text-align: right;
-  padding-right: 20px; }
+  text-align: right; }
   .title a {
     color: #333;
     text-decoration: none; }
   @media screen and (max-width: 600px) {
     .title {
       float: none;
-      text-align: left;
-      padding-left: 20px; } }
+      text-align: left; } }
 
 .menu {
   margin-top: 2.3em; }
   .menu ul {
     list-style: none;
-    margin: 0 0 0 20px;
+    margin: 0;
     padding: 0;
     overflow: hidden; }
   .menu li {
@@ -519,35 +523,30 @@ a {
 
 .pageTitle {
   text-align: right;
-  margin: 0;
-  padding: 0 20px; }
+  margin: 0; }
   @media screen and (max-width: 600px) {
     .pageTitle {
       text-align: left; } }
 
 .postImage {
   display: block;
-  float: right;
-  margin-right: 20px; }
+  float: right; }
   .postImage img {
     padding: 5px;
     background: #404040; }
   @media screen and (max-width: 1100px) {
     .postImage {
-      float: none;
-      margin-left: 20px; } }
+      float: none; } }
 
 .meta {
   text-transform: uppercase;
   color: #bbb; }
 
 .post {
-  margin-left: 20px;
   width: 70%; }
   @media screen and (max-width: 900px) {
     .post {
-      width: auto;
-      margin-right: 20px; } }
+      width: auto; } }
 
 .footer {
   padding-top: 50px;
