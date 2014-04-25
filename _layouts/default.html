@@ -13,11 +13,10 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+      <div class="container">
       <div class="header group">
-        <div class="half">
           <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        </div>
-        <div class="menu half">
+        <div class="menu">
           <ul>
             <li><a class="extra" href="/blog">Blog</a></li>
             <li><a class="extra" href="/portfolio">Portfolio</a></li>
@@ -26,17 +25,13 @@
         </div>
       </div>
       <div class="content group">
-        <div class="half">
           <h2 class="pageTitle">{{ page.title }}</h2>
           {% if page.thumbnail %}
             <div class="postImage">
               <img src="{{ page.thumbnail }}"/>
             </div>
           {% endif %}
-        </div>
-        <div class="half">
           {{ content }}
-        </div>
       </div>
       <div class="footer">
         <div class="contact">
@@ -52,6 +47,7 @@
             <a href="http://twitter.com/dlangenakker/">twitter.com/dlangenakker</a><br />
           </p>
         </div>
+      </div>
       </div>
     </body>
 </html>

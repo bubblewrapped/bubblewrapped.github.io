@@ -465,29 +465,20 @@ a {
   a:hover, a:focus {
     text-decoration: underline; }
 
-.half {
-  width: 50%;
-  float: left;
+.container {
+  width: 600px;
   padding: 0 20px; }
-  @media screen and (max-width: 600px) {
-    .half {
-      float: none;
+  @media screen and (max-width: 640px) {
+    .container {
       width: auto; } }
 
 .header h2 {
   float: right;
   clear: right; }
 
-.title {
-  float: right;
-  text-align: right; }
-  .title a {
-    color: #333;
-    text-decoration: none; }
-  @media screen and (max-width: 600px) {
-    .title {
-      float: none;
-      text-align: left; } }
+.title a {
+  color: #333;
+  text-decoration: none; }
 
 .menu {
   margin-top: 2.3em; }
@@ -505,12 +496,6 @@ a {
       .menu li a:hover {
         color: #2e85c8; }
 
-.content .half:first-child {
-  min-height: 100px; }
-  @media screen and (max-width: 600px) {
-    .content .half:first-child {
-      min-height: auto; } }
-
 .postHeader {
   margin-top: 2px; }
   .postHeader h2,
@@ -520,13 +505,6 @@ a {
     .postHeader h1 a {
       color: #333;
       text-decoration: none; }
-
-.pageTitle {
-  text-align: right;
-  margin: 0; }
-  @media screen and (max-width: 600px) {
-    .pageTitle {
-      text-align: left; } }
 
 .postImage {
   display: block;
@@ -542,13 +520,6 @@ a {
   text-transform: uppercase;
   color: #bbb; }
 
-.post {
-  width: 70%; }
-  @media screen and (max-width: 900px) {
-    .post {
-      width: auto; } }
-
 .footer {
   padding-top: 50px;
-  text-align: center;
   clear: both; }
