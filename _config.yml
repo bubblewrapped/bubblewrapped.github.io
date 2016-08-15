@@ -1,5 +1,5 @@
 name: Daniel Langenakker
 markdown: redcarpet
-pygments: true
+rouge: true
 exclude: [scss]
 category-list: [portfolio,blog]
