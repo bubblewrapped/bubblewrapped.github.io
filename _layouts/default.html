@@ -6,48 +6,39 @@
         <title>{% if page.title %} {{ page.title }} - {% endif %} {{ site.name }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        <!-- syntax highlighting CSS
+        <link rel="stylesheet" href="/css/syntax.css">-->
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+      <header class="header">
+        <a class="logo" href="/">{{ site.name }}</a>
+      </header>
       <div class="container">
-      <div class="header group">
-          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        <!--<div class="menu">
-          <ul>
-            <li><a class="extra" href="/blog">Blog</a></li>
-            <li><a class="extra" href="/portfolio">Portfolio</a></li>
-            <li><a class="extra" href="/contact/">Contact</a></li>
-          </ul>
-        </div>-->
-      </div>
-      <div class="content group">
-          <h2 class="pageTitle">{{ page.title }}</h2>
-          {% if page.thumbnail %}
-            <div class="postImage">
-              <img src="{{ page.thumbnail }}"/>
+        <div class="content group">
+            <nav class="menu">
+              <ul>
+                <li><a href="/portfolio">Portfolio</a></li>
+              </ul>
+            </nav>
+            {{ content }}
+            <div class="footer">
+            <div class="contact">
+              <p>
+                Front End Web Developer<br />
+                dlangenakker@gmail.com
+              </p>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/bubblewrapped/" target="_blank">github.com/bubblewrapped</a><br />
+                  <a href="http://twitter.com/dlangenakker/" target="_blank">twitter.com/dlangenakker</a><br />
+                </p>
+              </div>
             </div>
-          {% endif %}
-          {{ content }}
-      </div>
-      <div class="footer">
-        <div class="contact">
-          <p>
-            Daniel Langenakker<br />
-            Front End Web Developer<br />
-            dlangenakker@gmail.com
-          </p>
+          </div>
         </div>
-        <div class="contact">
-          <p>
-            <a href="http://github.com/bubblewrapped/">github.com/bubblewrapped</a><br />
-            <a href="http://twitter.com/dlangenakker/">twitter.com/dlangenakker</a><br />
-          </p>
-        </div>
-      </div>
       </div>
     </body>
 </html>
