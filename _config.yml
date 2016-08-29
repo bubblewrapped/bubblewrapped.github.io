@@ -3,3 +3,4 @@ markdown: redcarpet
 rouge: true
 exclude: [scss]
 category-list: [portfolio,blog]
+paginate: 10
