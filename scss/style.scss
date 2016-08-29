@@ -45,11 +45,12 @@ a {
 }
 
 .container {
-	width:50em;
+	width:45em;
 	margin:0 auto;
 	padding:0;
-	@media screen and (max-width:640px) {
+	@media (max-width:830px) {
 		width:auto;
+		padding:0 10px;
 	}
 }
 
@@ -72,11 +73,6 @@ a {
 			}
 		}
 	}
-}
-
-.content {
-	width:50em;
-	padding: 0 20px;
 }
 
 .pageHeader {
