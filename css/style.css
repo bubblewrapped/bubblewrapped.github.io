@@ -467,7 +467,7 @@ a {
     text-decoration: underline; }
 
 .header {
-  background: #ADD8E6; }
+  background: lightblue; }
 
 .logo {
   color: #fff;
@@ -490,19 +490,19 @@ a {
       padding: 0 10px; } }
 
 .menu {
-  margin-top: 1em; }
+  background: #5fb3ce; }
   .menu ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden; }
   .menu li {
     float: left; }
     .menu li a {
+      display: block;
       color: #333;
       text-decoration: none;
-      padding-right: 20px; }
-      .menu li a:hover {
+      padding: 7px 0;
+      margin-right: 20px; }
+      .menu li a:hover, .menu li a:active {
         color: #2e85c8; }
 
 .pageHeader {

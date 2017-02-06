@@ -1,5 +1,7 @@
 @import "normalize";
 
+$headerBlue:#ADD8E6;
+
 *,
 *:before,
 *:after {
@@ -28,7 +30,7 @@ a {
 }
 
 .header {
-	background:#ADD8E6;
+	background:$headerBlue;
 }
 
 .logo {
@@ -55,20 +57,20 @@ a {
 }
 
 .menu {
-	margin-top:1em;
+	background: darken($headerBlue, 20%);
 	ul {
 		list-style:none;
-		margin:0;
-		padding: 0;
 		overflow:hidden;
 	}
 	li {
 		float:left;
 		a {
+			display:block;
 			color:#333;
 			text-decoration:none;
-			padding-right:20px;
-			&:hover {
+			padding:7px 0;
+			margin-right:20px;
+			&:hover, &:active {
 				color:#2e85c8;
 			}
 		}
