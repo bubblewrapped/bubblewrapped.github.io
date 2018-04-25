@@ -1,6 +1,4 @@
 name: Daniel Langenakker
-markdown: redcarpet
 rouge: true
-exclude: [scss]
+exclude: [scss,node_modules,gruntfile.js,package.json]
 category-list: [portfolio,blog]
-paginate: 10

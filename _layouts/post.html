@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<article class="post">
-	<h1 class="pageTitle">{{ page.title }}</h1>
-	<div class="postHeader">
-		<span class="meta">{{ page.date | date: "%d %b %Y" }}</span>
-	</div>
-	<div>
-	{{ content }}
-	</div>
-</article>
+<div class="container">
+	<article class="post">
+		<h1 class="pageTitle">{{ page.title }}</h1>
+		<div class="postHeader">
+			<span class="meta">{{ page.date | date: "%d %b %Y" }}</span>
+		</div>
+		<div>
+		{{ content }}
+		</div>
+	</article>
+</div>

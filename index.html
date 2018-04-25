@@ -4,23 +4,25 @@ layout: default
 
 <div class="home">
 	<div class="aboutMe">
-		<p>My name is Daniel Langenakker and I am a front end web developer.</p>
-		<p>I know my way around HTML, CSS and jQuery/JavaScript.</p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/BE57t-qg3JU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<div class="container">
+			<p>My name is Daniel Langenakker and I am a front end web developer.</p>
+			<p>I know my way around HTML, CSS and jQuery/JavaScript.</p>
+		</div>
 	</div>
-  <div class="posts">
-    <div class="posts">
-      	{% for post in site.categories.blog %}
-	      	<article class="post">
-	         	<div class="postHeader">
-	            	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	          		<span class="meta">{{ post.date | date: "%d %b %Y"  }}</span>  
-	          	</div>
-	          	<div>
-	        		{{ post.excerpt }}
-	      		</div>
-	      	</article>
-      	{% endfor %}
-    </div>
-  </div>
+	
+	<div class="container">
+	  	<div class="posts">
+	      	{% for post in site.categories.blog %}
+		      	<article class="post">
+		         	<div class="postHeader">
+		            	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		          		<span class="meta">{{ post.date | date: "%d %b %Y"  }}</span>  
+		          	</div>
+		          	<div>
+		        		{{ post.excerpt }}
+		      		</div>
+		      	</article>
+	      	{% endfor %}
+		</div>
+	</div>
 </div>

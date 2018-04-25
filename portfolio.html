@@ -1,0 +1,34 @@
+---
+layout: post
+title: Portfolio
+permalink: /portfolio/
+---
+
+<div class="portfolio">
+	<h2>My Skills and Known Technologies</h2>
+	<ul>
+		<li>HTML</li>
+		<li>CSS/SCSS</li>
+		<li>JavaScript/jQuery/Webpack</li>
+		<li>React/Redux/Jest/Enzyme</li>
+		<li>Firebase realtime database and authentication/Heroku</li>
+		<li>PHP</li>
+		<li>WordPress/Jekyll</li>
+		<li>Sketch/Photoshop</li>
+	</ul>
+	<h2>Previous Work</h2>
+	<div class="posts">
+		{% for post in site.categories.portfolio %}
+		<article class="post">
+			<div class="postHeader">
+				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			<span class="meta">{{ post.date | date: "%d %b %Y"  }}</span>
+			</div>
+			<div>
+				{{ post.excerpt }}
+			<a href="{{ post.url }}">Click through for images</a>
+			</div>
+		</article>
+		{% endfor %}
+	  </div>
+</div>

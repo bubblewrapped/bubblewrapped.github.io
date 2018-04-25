@@ -73,7 +73,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'PT Sans', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 /*
  * Addresses margins handled incorrectly in IE 6/7.
@@ -450,9 +450,14 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  border-top: 5px solid #ADD8E6;
+  min-height: 100%; }
+
 html,
 body {
   color: #404040;
+  font-size: 1.1em;
   line-height: 1.3; }
 
 img {
@@ -465,22 +470,8 @@ a {
   a:hover, a:focus {
     text-decoration: underline; }
 
-.header {
-  background: lightblue; }
-
-.logo {
-  color: #fff;
-  display: block;
-  font-size: 4em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1em; }
-  .logo:hover, .logo:focus {
-    text-decoration: none; }
-
 .container {
-  width: 45em;
+  width: 50%;
   margin: 0 auto;
   padding: 0; }
   @media (max-width: 830px) {
@@ -489,30 +480,35 @@ a {
       padding: 0 10px; } }
 
 .menu {
-  background: #5fb3ce; }
+  padding: 0; }
   .menu ul {
     list-style: none;
-    overflow: hidden; }
-  .menu li {
-    float: left; }
-    .menu li a {
-      display: block;
-      color: #333;
-      text-decoration: none;
-      padding: 7px 0;
-      margin-right: 20px; }
-      .menu li a:hover, .menu li a:active {
-        color: #2e85c8; }
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+  .menu li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 7px 0;
+    margin-right: 20px; }
+    .menu li a:hover, .menu li a:active {
+      color: #2e85c8; }
 
-.pageHeader {
-  text-transform: uppercase; }
+.aboutMe {
+  background: #a5ddf7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh; }
 
 .postHeader {
   margin-top: 2px; }
-  .postHeader h2,
+  .postHeader h3,
   .postHeader h1 {
     margin-bottom: 0; }
-    .postHeader h2 a,
+    .postHeader h3 a,
     .postHeader h1 a {
       color: #333;
       text-decoration: none; }
@@ -534,3 +530,5 @@ a {
 .footer {
   padding-top: 50px;
   clear: both; }
+
+/*# sourceMappingURL=style.css.map */
