@@ -1,4 +1,3 @@
 name: Daniel Langenakker
 rouge: true
-exclude: [scss,node_modules,gruntfile.js,package.json]
 category-list: [portfolio,blog]

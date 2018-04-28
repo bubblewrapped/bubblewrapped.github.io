@@ -1,6 +1,9 @@
+---
+---
+
 @import "normalize";
 
-$headerBlue:#ADD8E6;
+$headerBlue: #a5ddf7;
 
 *,
 *:before,
@@ -75,17 +78,24 @@ a {
 }
 
 .aboutMe {
-	background: #a5ddf7;
+	background: $headerBlue;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 50vh;
 }
 
+.pageHeader {
+	background: $headerBlue;
+	padding: 5px 0;
+	h1 {
+		margin: 0;
+	}
+}
+
 .postHeader {
 	margin-top:2px;
-	h3,
-	h1 {
+	h3 {
 		margin-bottom:0;
 		a {
 			color:#333;

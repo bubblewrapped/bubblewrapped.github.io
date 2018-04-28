@@ -4,6 +4,7 @@ layout: post
 title: "Yallourn Bowling Club Website"
 date: 2018-04-24 14:50:00
 categories: portfolio
+thumbnail: "/img/screenshots/yallournbccom_home_thumb.jpg"
 
 ---
 
