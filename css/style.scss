@@ -3,7 +3,7 @@
 
 @import "normalize";
 
-$headerBlue: #a5ddf7;
+$lightBlue: #a5ddf7;
 
 *,
 *:before,
@@ -13,7 +13,7 @@ $headerBlue: #a5ddf7;
 }
 
 html {
-	border-top: 5px solid $headerBlue;
+	border-top: 5px solid $lightBlue;
 	min-height:100%;
 }
 
@@ -37,15 +37,9 @@ a {
 	}
 }
 
-.header {
-}
-
-.logo {
-}
-
 .container {
-	//width:45em;
-	width:50%;
+	width:44em;
+	//width:50%;
 	margin:0 auto;
 	padding:0;
 	@media (max-width:830px) {
@@ -55,7 +49,6 @@ a {
 }
 
 .menu {
-	padding:0;
 	ul {
 		list-style:none;
 		overflow:hidden;
@@ -78,15 +71,14 @@ a {
 }
 
 .aboutMe {
-	background: $headerBlue;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	background: $lightBlue;
 	height: 50vh;
+	margin-bottom: 20px;
+	padding: 20px 0;
 }
 
 .pageHeader {
-	background: $headerBlue;
+	background: $lightBlue;
 	padding: 5px 0;
 	h1 {
 		margin: 0;
@@ -119,6 +111,52 @@ a {
 .meta {
 	text-transform:uppercase;
 	color:#bbb;
+}
+
+.portfolio {
+
+}
+
+.portfolio-item {
+	display: flex;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $lightBlue;
+	margin-bottom: 20px;
+}
+
+.portfolio-item__image {
+	padding-left: 10px;
+	width: 33%;
+}
+
+.portfolio-item:nth-child(even) {
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.portfolio-item:nth-child(even) .portfolio-item__image {
+	padding: 0 10px 0 0;
+}
+
+@media (max-width:1000px) {
+	.portfolio-item {
+		flex-direction: column;
+		img {
+			max-width: 100%;
+		}
+	}
+	.portfolio-item:nth-child(even) {
+		flex-direction: column;
+	}
+	.portfolio-item__image,
+	.portfolio-item:nth-child(even) .portfolio-item__image {
+		padding: 0;
+		width: auto;
+	}
+}
+
+.post {
+	flex-basis: 33%;
 }
 
 .footer {
