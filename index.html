@@ -5,29 +5,26 @@ layout: default
 <div class="home">
 	<div class="aboutMe">
 		<div class="container">
-			<p>My name is Daniel Langenakker and I am a front end web developer.</p>
-			<p>I know my way around HTML, CSS and jQuery/JavaScript.</p>
+			<p>Hello, my name is Daniel Langenakker and I am a front end web developer.</p>
 		</div>
 	</div>
 	
-	<div class="container">
-		<div class="portfolio">
-			{% for post in site.categories.portfolio limit:2 %}
-			<article class="portfolio-item">
-				<div>
-					<p>
-						<a href="{{ post.url }}">{{ post.title }}</a>
-					</p>
-					{{post.excerpt}}
-				</div>
-				<div class="portfolio-item__image">
-					<img src="{{ post.thumbnail }}" />
-				</div>
+	<div class="home-portfolio">
+		<h2 class="home-portfolio-header">My Portfolio of Work</h2>
+		<div class="home-portfolio-inner">
+			{% for post in site.categories.portfolio limit:4 %}
+			<article class="home-portfolio-item">
+					<a href="{{ post.url }}">
+						<img src="{{ post.thumbnail }}" />
+						 {{ post.title }}
+					</a>
 			</article>
 			{% endfor %}
-	  	</div>
+		</div>
+	</div>
+	<div class="container">
 	  	<div class="posts">
-	      	{% for post in site.categories.blog %}
+	      	{% for post in site.categories.blog limit:10 %}
 		      	<article class="post">
 		         	<div class="postHeader">
 		            	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

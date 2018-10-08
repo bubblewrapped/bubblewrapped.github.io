@@ -3,7 +3,7 @@
 layout: post
 title: "Uglii website and Other Associated Websites"
 date: 2018-03-19 14:50:00
-categories: portfolio
+categories: [portfolio, previous-work]
 thumbnail: "/img/screenshots/ugliicom_home_thumb.jpg"
 excerpt: "Websites I created alone and in a team"
 
