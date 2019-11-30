@@ -34,7 +34,7 @@ img {
 }
 
 a {
-	color:#2e85c8;
+	color: #5CC7F9;
 	text-decoration:none;
 	&:hover,&:focus {
 		text-decoration:underline;
@@ -52,6 +52,8 @@ a {
 }
 
 .menu {
+	display: flex;
+	align-items: center;
 	ul {
 		list-style:none;
 		overflow:hidden;
@@ -62,7 +64,7 @@ a {
 	li {
 		a {
 			display:block;
-			color:#333;
+			color:#303030;
 			text-decoration:none;
 			padding:7px 0;
 			margin-right:20px;
@@ -70,6 +72,14 @@ a {
 				color:#2e85c8;
 			}
 		}
+	}
+}
+
+.logo {
+	color: #303030;
+	padding: 10px 20px 10px 0;
+	&:hover, &:active {
+		text-decoration: none;
 	}
 }
 
@@ -86,6 +96,11 @@ a {
 
 .infoBox {
 	padding: 1em;
+}
+
+.home h2 {
+	text-align: center;
+	font-size: 3rem;
 }
 
 .pageHeader {
@@ -152,22 +167,49 @@ a {
 	width: 25%;
 }
 
-
-@media (max-width:1000px) {
-	.home-portfolio-item {
-		width: auto;
-	}
-
-	.pageTitle {
-		font-size:24px;
-	}
-}
-
 .post {
 	flex-basis: 33%;
 }
 
 .footer {
 	padding-top:50px;
-	clear:both;
+	display: flex;
+	align-items: end;
+}
+
+.contact {
+	flex-grow: 1;
+}
+
+.social {
+	text-align: right;
+}
+
+.socialLink img {
+	width: 100px;
+	height: auto;
+}
+
+@media (max-width:1000px) {
+	.menu {
+		flex-direction: column;
+		text-align: center;
+
+		li a {
+			margin: 0 10px;
+		}
+	}
+
+	.logo {
+		padding: 10px 0;
+	}
+
+	.home-portfolio-item {
+		width: auto;
+	}
+
+	.pageTitle,
+	.home h2 {
+		font-size: 24px;
+	}
 }
