@@ -11,13 +11,13 @@
 
 				<!-- Custom CSS -->
 				<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
-				<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+				<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 				<link rel="stylesheet" href="/css/style.css">
 		</head>
 		<body>
-			<header class="header">
-				<nav class="menu container">
-					<a href="/" class="logo">{{ site.name }}</a>
+			<header class="header container">
+				<a href="/" class="logo">{{ site.name }}</a>
+				<nav class="menu">
 			        <ul>
 			        	<li><a href="/blog">Blog</a></li>
 						<li><a href="/portfolio">Portfolio</a></li>
@@ -27,19 +27,15 @@
 		    </header>
 			{{ content }}
 			<footer class="footer container">
-				<div class="contact">
-					<p>
-						Front End Web Developer<br />
-						dlangenakker@gmail.com
-					</p>
-				</div>
-				<div class="contact social">
-					<p>
-						<a class="socialLink" href="http://github.com/bubblewrapped/"><img src="/img/GitHub_Logo.png"
-								alt="GitHub logo"></a>
-						<a class="socialLink" href="https://codepen.io/bubblewrapped/#"><img src="/img/codepen.png"
-								alt="CodePen logo"></a>
-					</p>
+				<p>
+					Front End Web Developer<br />
+					dlangenakker@gmail.com
+				</p>
+				<div class="social">
+						<a class="socialLink" href="http://github.com/bubblewrapped/"><img src="https://s.svgbox.net/social.svg?fill=404040&ic=github" alt="GitHub logo"></a>
+						<a class="socialLink" href="https://codepen.io/bubblewrapped/#"><img src="https://s.svgbox.net/social.svg?fill=404040&ic=codepen" alt="CodePen logo"></a>
+						<a class="socialLink" href="https://www.twitch.tv/dlangenakker"><img src="https://s.svgbox.net/social.svg?fill=404040&ic=twitch" alt="Twitch logo"></a>
+						<a class="socialLink" href="https://www.youtube.com/channel/UCioJidJsz73ulr9mhxcdN_Q"><img src="https://s.svgbox.net/social.svg?fill=404040&ic=youtube" alt="YouTube logo"></a>
 				</div>
 			</footer>
 		</body>

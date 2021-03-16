@@ -5,7 +5,31 @@ permalink: /portfolio/
 ---
 
 <div class="portfolio">
-	<h2>My Skills and Known Technologies</h2>
+	
+	<div class="portfolio__items">
+		{% for post in site.categories.previous-work %}
+			<div class="portfolio-item">
+				<p>
+					<a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title }}" title="{{ post.title }}" /></a>
+					<!--<a href="{{ post.url }}">{{ post.title }}</a>-->
+				</p>
+			</div>
+		{% endfor %}
+	</div>
+
+	<h2>Small Projects</h2>
+	<div class="portfolio-small">
+		{% for post in site.categories.small %}
+			<div class="portfolio-item">
+				<p>
+					<a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title }}" title="{{ post.title }}" /></a>
+					<!--<a href="{{ post.url }}">{{ post.title }}</a>-->
+				</p>
+			</div>
+		{% endfor %}
+	</div>
+
+	<h2>Known Technologies</h2>
 	<ul>
 		<li>HTML</li>
 		<li>CSS/SCSS</li>
@@ -16,17 +40,5 @@ permalink: /portfolio/
 		<li>WordPress/Jekyll</li>
 		<li>Sketch/Photoshop</li>
 	</ul>
-	<h2>Previous Work</h2>
-	<div class="portfolio__items">
-			{% for post in site.categories.previous-work %}
-			<article class="portfolio-item">
-				<div class="postHeader">
-					<h3>
-						<a href="{{ post.url }}">{{ post.title }}</a>
-					</h3>
-					{{post.excerpt | markdownify}}
-				</div>
-			</article>
-			{% endfor %}
-	  	</div>
+
 </div>

@@ -5,28 +5,24 @@ layout: default
 <div class="home">
 	<div class="aboutMe">
 		<div class="container">
-			<div class="infoBox">
-				<div class="inner">
-					<p>Website creation and maintenance is what I do</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="home-portfolio">
-		<h2 class="home-portfolio-header">Work and Projects</h2>
-		<div class="home-portfolio-inner">
-			{% for post in site.categories.portfolio limit:4 %}
-			<article class="home-portfolio-item">
-					<a href="{{ post.url }}">
-						<img src="{{ post.thumbnail }}" />
-						 {{ post.title }}
-					</a>
-			</article>
-			{% endfor %}
+			<p>Website creation and maintenance is what I do</p>
 		</div>
 	</div>
 	<div class="container">
+		<div class="home-portfolio">
+			<h2 class="home-portfolio-header">Work and Projects</h2>
+			<div class="home-portfolio-inner">
+				{% for post in site.categories.portfolio limit:10 %}
+				<article class="home-portfolio-item">
+					<a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title }}" title="{{ post.title }}" /></a>
+					<a href="{{ post.url }}">
+							{{ post.title }}
+					</a>
+				</article>
+				{% endfor %}
+			</div>
+		</div>
+	
 		<h2>Writing</h2>
 	  	<div class="posts">
 	      	{% for post in site.categories.blog limit:10 %}
