@@ -49,6 +49,7 @@ a {
 
 .container {
 	margin: 0 auto;
+	padding: 0 10px;
 	max-width: 50em;
 }
 
@@ -88,7 +89,8 @@ a {
 
 .pageTitle {
 	text-align: center;
-	font-size: 64px;
+	//font-size: 64px;
+	font-size: clamp(32px, 10vw, 64px);
 	letter-spacing: 5px;
 	line-height: 1;
 	padding: 1em 0;
